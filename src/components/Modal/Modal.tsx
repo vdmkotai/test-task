@@ -3,12 +3,12 @@ import styles from "./Modal.module.scss";
 
 import ModalPortal from "./ModalPortal";
 
-export interface IFullScreenModalProps {
+interface IModalProps {
   children?: React.ReactNode;
   onClose?(): void;
 }
 
-const Modal: React.FC<IFullScreenModalProps> = ({ children, onClose }) => (
+const Modal: React.FC<IModalProps> = ({ children, onClose }) => (
   <ModalPortal wrapperId="modal">
     <div className={styles.wrapper} aria-modal="true" role="dialog">
       <div className={styles.content}>
