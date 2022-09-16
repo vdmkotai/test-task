@@ -1,0 +1,26 @@
+.input {
+  display: flex;
+  padding: 15px;
+  border: none;
+  background: #ddd;
+}
+
+.input:focus {
+  background-color: #ccc;
+  outline: none;
+}
+
+.inputError {
+  box-shadow: inset 0 0 0 2px red;
+}
+
+.errorText {
+  color: red;
+  margin-top: 5px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
